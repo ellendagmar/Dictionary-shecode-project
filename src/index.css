@@ -22,7 +22,16 @@ h1 {
   margin: 0 auto;
   font-size: 50px;
 }
-
+h2 {
+  color: rgb(52, 52, 52);
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.833);
+}
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .mainText {
   padding-top: 44px;
   max-width: 800px;
@@ -45,7 +54,7 @@ h1 {
   width: var(--size);
   padding: 3px;
   position: relative;
-  transition: width 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: width 300ms cubic-bezier(0.18, 0.89, 0.32, 1.15);
   overflow: hidden;
 }
 
@@ -87,6 +96,14 @@ h1 {
 }
 .searchbarInputSubmit:focus-within:focus:hover {
   outline: 0;
+}
+#playButton {
+  color: rgb(52, 52, 52);
+  border: none;
+  background: transparent;
+}
+#playButton:hover {
+  color: gray;
 }
 @media (max-width: 450px) {
   .mainText {
