@@ -27,14 +27,21 @@ export default function Dictionary() {
 
   return (
     <div className="dictionaryContainer">
-      <form onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Type a word"
-          autoFocus="on"
-          onChange={handleKeywordChange}
-        />
-      </form>
+      <div className="mainText d-flex flex-direction-row">
+        <h1>Dictionary</h1>
+        <form onSubmit={search} className="searchbar">
+          <input
+            type="search"
+            className="searchbarInput"
+            placeholder="Type a word"
+            autoFocus="on"
+            onChange={handleKeywordChange}
+          />
+          <button className="searchbarInputSubmit">
+            <span className="material-symbols-outlined">search</span>
+          </button>
+        </form>
+      </div>
       <Results results={results} />
     </div>
   );
