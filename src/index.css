@@ -29,8 +29,49 @@ h2 {
   border-bottom: 1px solid rgba(128, 128, 128, 0.833);
 }
 h3 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Permanent Marker", cursive;
+}
+p {
+  font-family: sans-serif;
+}
+.exampleText {
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+}
+.phoneticsText {
+  color: rgb(85, 85, 85);
+}
+.synonymsBox {
+  max-width: 800px;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+.synonyms {
+  display: inline-block;
+  padding-right: 10px;
+
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 500px) {
+  .synonyms {
+    font-size: 15px;
+  }
+}
+
+.Meaning {
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(225, 225, 230, 0.909);
+  box-shadow: 1px 1px 10px 1px gray;
+}
+.photos {
+  padding: 5px;
+}
+.photo {
+  border-radius: 5px;
 }
 .mainText {
   padding-top: 44px;
@@ -39,11 +80,7 @@ h3 {
 }
 .results {
   max-width: 800px;
-  border: 1px solid gray;
-  border-radius: 8px;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: rgba(225, 225, 230, 0.909);
+  margin: 0 auto;
 }
 .searchbar {
   --size: 60px;
@@ -85,7 +122,7 @@ h3 {
 .searchbarInput:focus {
   outline: 0;
   width: 100%;
-  background: rgba(225, 225, 230, 0.909);
+  background: rgba(225, 225, 230, 0.609);
 }
 .searchbar:focus-within {
   width: 50%;
@@ -103,7 +140,7 @@ h3 {
   background: transparent;
 }
 #playButton:hover {
-  color: gray;
+  color: rgb(189, 185, 206);
 }
 @media (max-width: 450px) {
   .mainText {

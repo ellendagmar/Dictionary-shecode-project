@@ -11,7 +11,7 @@ export default function Phonetic(props) {
     });
     return sound.play();
   }
-  if (audio != null) {
+  if (audio) {
     return (
       <div className="Phonetic d-flex flex-direction-row">
         <div className="audio">
@@ -23,7 +23,7 @@ export default function Phonetic(props) {
             play_circle
           </button>
         </div>
-        {props.phonetic.text}
+        <div className="phoneticsText">{props.phonetic.text}</div>
       </div>
     );
   } else {

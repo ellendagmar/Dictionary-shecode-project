@@ -6,14 +6,16 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="results">
-        <h2>{props.results.word}</h2>
-        {props.results.phonetics.map(function (phonetics, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetics} />
-            </div>
-          );
-        })}
+        <div className="Meaning">
+          <h2>{props.results.word}</h2>
+          {props.results.phonetics.map(function (phonetics, index) {
+            return (
+              <div key={index}>
+                <Phonetic phonetic={phonetics} />
+              </div>
+            );
+          })}
+        </div>
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
