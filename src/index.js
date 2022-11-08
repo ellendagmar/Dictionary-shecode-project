@@ -11,6 +11,15 @@ root.render(
     <div className="container">
       <App />
       <Dictionary />
+      <p className="codedby">
+        <a
+          href="https://github.com/ellendagmar/Dictionary-shecode-project"
+          alt="Link to project on github"
+        >
+          Open-source code{" "}
+        </a>
+        by ellendagmar
+      </p>
     </div>
   </React.StrictMode>
 );
