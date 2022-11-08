@@ -41,6 +41,14 @@ a {
 a:hover {
   color: rgb(189, 185, 206);
 }
+#playButton {
+  color: rgb(52, 52, 52);
+  border: none;
+  background: transparent;
+}
+#playButton:hover {
+  color: rgb(189, 185, 206);
+}
 .codedby {
   font-family: "Permanent Marker", cursive;
   text-align: center;
@@ -64,19 +72,6 @@ a:hover {
 
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-}
-@media (max-width: 500px) {
-  .synonyms {
-    font-size: 15px;
-  }
-  .codedby {
-    font-size: 10px;
-  }
-}
-@media (max-width: 225px) {
-  h1 {
-    font-size: 35px !important;
-  }
 }
 .Meaning {
   max-width: 800px;
@@ -153,13 +148,14 @@ a:hover {
 .searchbarInputSubmit:focus-within:focus:hover {
   outline: 0;
 }
-#playButton {
-  color: rgb(52, 52, 52);
-  border: none;
-  background: transparent;
-}
-#playButton:hover {
-  color: rgb(189, 185, 206);
+
+@media (max-width: 500px) {
+  .synonyms {
+    font-size: 15px;
+  }
+  .codedby {
+    font-size: 10px;
+  }
 }
 @media (max-width: 450px) {
   .mainText {
@@ -170,5 +166,10 @@ a:hover {
 @media (max-width: 290px) {
   h1 {
     font-size: 40px;
+  }
+}
+@media (max-width: 225px) {
+  h1 {
+    font-size: 35px !important;
   }
 }
