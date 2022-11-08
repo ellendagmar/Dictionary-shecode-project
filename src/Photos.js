@@ -6,11 +6,10 @@ export default function Photos(props) {
       <div className="Meaning row">
         {props.photos.map(function (photo, index) {
           return (
-            <div className="photos col-sm-4">
+            <div className="photos col-sm-4" key={index}>
               <img
                 src={photo.src.landscape}
                 className="photo img-fluid"
-                key={index}
                 alt={photo.alt}
               />
             </div>
